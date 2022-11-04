@@ -1,25 +1,23 @@
+import { Route, Routes } from 'react-router-dom';
+
 import logo from './logo.svg';
 import './App.css';
+import Welcome from './modules/Welcome/Welcome';
+import Learn from './modules/Learn/Learn';
+import Quizz from './modules/Quizz/Quizz';
+import Nomatch from './modules/Nomatch/Nomatch';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	return (
+		<div>
+			<Routes>
+				<Route element={<Welcome />} path='/' />
+				<Route element={<Learn />} path='learn' />
+				<Route element={<Quizz />} path='quizz' />
+				<Route element={<Nomatch />} path='*' />
+			</Routes>
+		</div>
+	);
 }
 
 export default App;
