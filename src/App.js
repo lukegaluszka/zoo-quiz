@@ -1,6 +1,7 @@
+import { Route, Routes } from 'react-router-dom';
+
 import logo from './logo.svg';
 import './App.css';
-import { Route, Routes } from 'react-router-dom';
 import Welcome from './modules/Welcome/Welcome';
 import Learn from './modules/Learn/Learn';
 import Quizz from './modules/Quizz/Quizz';
