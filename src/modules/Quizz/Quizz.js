@@ -1,4 +1,5 @@
 import Topbar from '../../components/Topbar';
+import Card from '../../components/Card';
 
 function Quizz() {
 	return (
